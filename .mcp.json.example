@@ -1,0 +1,11 @@
+{
+  "mcpServers": {
+    "prophet": {
+      "type": "stdio",
+      "command": "node",
+      "args": [
+        "/path/to/Claude_Prophet/mcp-server.js"
+      ]
+    }
+  }
+}
