@@ -137,9 +137,9 @@ Create `.env` file:
 ```bash
 ALPACA_PUBLIC_KEY=your_public_key
 ALPACA_SECRET_KEY=your_secret_key
-ALPACA_PAPER=true  # Start with paper trading
+ALPACA_ENDPOINT= # Start with paper trading
 GEMINI_API_KEY=your_gemini_key  # For AI news cleaning
-PORT=4534
+
 ```
 
 ### 2. Build & Run Go Backend
@@ -492,24 +492,6 @@ data/prophet_trader.db
 2. Add route in `setupRouter()` (`cmd/bot/main.go`)
 3. Add tool handler in `mcp-server.js`
 4. Test with Claude Code
-
-### Code Analysis with Cartogopher
-
-The codebase is indexed with Cartogopher for fast navigation:
-
-```bash
-# Search for symbols
-cartogopher search "PlaceOrder"
-
-# Get function details
-cartogopher symbol PlaceOrder
-
-# Find call relationships
-cartogopher related_to PlaceOrder
-
-# View code slice
-cartogopher slice services/alpaca_trading.go 56 80
-```
 
 ---
 
