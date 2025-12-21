@@ -137,9 +137,9 @@ Create `.env` file:
 ```bash
 ALPACA_PUBLIC_KEY=your_public_key
 ALPACA_SECRET_KEY=your_secret_key
-ALPACA_PAPER=true  # Start with paper trading
+ALPACA_ENDPOINT= # Start with paper trading
 GEMINI_API_KEY=your_gemini_key  # For AI news cleaning
-PORT=4534
+
 ```
 
 ### 2. Build & Run Go Backend
